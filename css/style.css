@@ -1,0 +1,172 @@
+/*Stylesheet by Erin J. LeFevre, 2020*/
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black; */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+html{  
+  margin: 10px;
+}		
+
+body{
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+
+header { 
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: justify;
+  background-color: #ffffff;
+  padding: 0;
+
+}
+
+footer { 
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #ffffff;  
+	padding: 0;
+	margin: 0;
+}
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 5fr 20fr;
+    grid-gap: 20px;
+	height: 720px;
+	
+	
+	}
+
+/* .TimelinePanel*/
+.TimelinePanel {	
+   text-align: left;
+		
+}
+
+.SearchPanel {
+  text-align: left;     
+}
+
+
+#mapid {
+    background-color: #ffffff;    
+    width: 100%;
+    height: 800px;
+    align-content:center;
+    display: block;
+  
+}	
+
+/* changes the background color of popups*/
+.leaflet-popup-tip {
+	background: #f9fbd0;
+	opacity: .75;
+	color: #333;
+	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+	}
+/*changes font color on popups*/	
+.leaflet-popup-content {
+	margin: 13px 19px;
+	line-height: 1.4;
+	color: black;
+	}
+/*changes the background color*/	
+.leaflet-control-layers-expanded {
+	padding: 3px 3px 3px 3px;
+	color: #333;
+	background: #f9fbd0;
+	opacity: .75;
+	width: 150px;
+	
+/*changes the background color of the zoom*/
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {
+	font-size: 22px;
+	background-color: #f9fbd0;
+	}
+	
+/* general typography */
+.leaflet-container {
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	color: #f9fbd0
+	}
+
+header h3 {
+	font-family: sans-serif;
+	margin-left: 30px;	
+	color: #b52025;
+	margin-bottom: 10px;
+	font-weight: 100;
+	
+}
+
+header p {
+    font-family: sans-serif;
+	font-size: .85em;
+	margin-left: 30px;
+	text-align: justify-all;
+	width: 850px;
+		
+}
+	
+h4 {
+	font-family: sans-serif;
+	margin-left: 30px;
+	margin-top: 40px;
+	color: #b52025;
+	font-weight: 100;
+	
+}
+	
