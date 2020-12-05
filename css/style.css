@@ -16,8 +16,11 @@ html{
 body{
   padding: 10px;
   margin: 10px;
+
   background-color: #000000;
-  font-family: sans-serif;
+
+  background-color: #adad88;
+font-family: sans-serif;
   color: #ffffff;
   font-size: 1em;
 }
