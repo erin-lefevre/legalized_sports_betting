@@ -1,5 +1,5 @@
 /*JavaScript - Erin J. LeFevre, Jeff Kalar 2020*/
-/* data processing/slider section based on the tutorial from neiugis.github.io/lab7*/
+
 
 var myMap = L.map('mapid', {
     center: [38.815461, -98.368361],
