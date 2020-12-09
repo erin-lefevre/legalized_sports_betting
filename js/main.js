@@ -2,15 +2,15 @@
 
 
 var myMap = L.map('mapid', {
-    center: [42, -100],
+   center: [42, -100],
    zoom: 4,
     
     maxBounds: [
-        [26.453492, -129.296511],
-        [49.655600, -59.785606]
+        [32.420224, -127.689262],
+        [48.939566, -64.057017]
     ],
     maxZoom: 15,
-    minZoom: 3
+    minZoom: 2
     
 });
 
@@ -31,15 +31,12 @@ var basemap2 = L.tileLayer('https://api.mapbox.com/styles/v1/erin-lefevre/ckg05k
 var goldcoin_legal = new L.Icon({
     iconUrl: 'images/goldcoin_legal.png',
     iconRetinaUrl: 'images/goldcoin_legal.png',    
-    iconAnchor:  [35, 35],
-    popupAnchor: [1, -34],   
+    iconAnchor:  [10, 10],
+	iconSize:    [25, 25],
+    popupAnchor: [1, -34]   
     
   });
 
-function onEachFeature(feature, layer) {
-    console.log(feature);
-    layer.bindPopup(feature.properties.Status);
-  }
 
 /*Add layers to map*/
 /*States with legal gaming*/
@@ -63,14 +60,17 @@ L.geoJson(states_legal_points, {
 var goldcoin_legal_no = new L.Icon({
     iconUrl: 'images/goldcoin_legal_no.png',
     iconRetinaUrl: 'images/goldcoin_legal_no.png',    
-    iconAnchor:  [35, 35],
-    popupAnchor: [1, -34],   
+    iconAnchor:  [5, 0],
+	iconSize:    [15, 15],
+    popupAnchor: [1, -34]   
     
   });
 
 function onEachFeature(feature, layer) {
     console.log(feature);
-    layer.bindPopup(feature.properties.Status);
+     layer.bindPopup('<b>'+'State Name: '+'</b>'+ feature.properties.Name +
+	 '<br>'+ '<b>'+'Status: '+'</b>'+ feature.properties.Status	+
+	 '<br>'+ '<b>'+'Casinos: '+'</b>'+ feature.properties.Casinos);
   }
 
 /*Add layers to map*/
