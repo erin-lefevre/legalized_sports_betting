@@ -44,8 +44,8 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #aaaa11;
-  border: 4px solid #aaaa11;
+  background-color: gold;
+  border: 4px solid gold;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -72,7 +72,7 @@ body {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #aaaa11;
+  border-color: transparent transparent transparent gold;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -97,10 +97,10 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: ;
   position: relative;
   border-radius: 6px;
-  border: 4px solid #aaaa11;
+  border: 4px solid gold;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
