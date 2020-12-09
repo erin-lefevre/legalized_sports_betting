@@ -27,13 +27,32 @@ var basemap2 = L.tileLayer('https://api.mapbox.com/styles/v1/erin-lefevre/ckg05k
         });
 
 
+/*Layer control start*/
+var basemaps = {
+    "Gold & Black": basemap1,
+    "Aerial Imagery": basemap2
+  };
+
+var overlays = {    
+  };
+
+L.control.layers(basemaps, overlays, {
+    collapsed: false
+}).addTo(myMap);
+
+/* End of layer control*/
+
+
+
+
+
 /*New marker for legal states*/
 var goldcoin_legal = new L.Icon({
     iconUrl: 'images/goldcoin_legal.png',
     iconRetinaUrl: 'images/goldcoin_legal.png',    
     iconAnchor:  [10, 10],
 	iconSize:    [25, 25],
-    popupAnchor: [1, -34]   
+    popupAnchor: [1, -8]   
     
   });
 
@@ -62,7 +81,7 @@ var goldcoin_legal_no = new L.Icon({
     iconRetinaUrl: 'images/goldcoin_legal_no.png',    
     iconAnchor:  [5, 0],
 	iconSize:    [15, 15],
-    popupAnchor: [1, -34]   
+    popupAnchor: [2, -2]   
     
   });
 
