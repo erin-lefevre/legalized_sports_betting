@@ -8,8 +8,7 @@ header p {
 }
 
 html{  
-  margin: 10px;
-  overflow: -moz-scrollbars-none;    
+  margin: 10px;    
 }		
 
 body{
@@ -57,7 +56,10 @@ footer {
 
 .TimelinePanel::-webkit-scrollbar {
   display: none;
+  overflow: -moz-scrollbars-none;
 }
+
+
 
 .SearchPanel {
   text-align: left;     
