@@ -10,21 +10,13 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-
-
 /* Container around content */
 .container {
   padding: 5px 5px;
   position: relative;
   background-color: inherit;
-  width: 100%;
-     
+  width: 100%;    
 }
-
-
-
-
-
 
 /* The actual content */
 .content {
