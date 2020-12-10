@@ -43,16 +43,20 @@ footer {
     grid-template-columns: 1.3fr 3fr;
 	grid-template-rows: 5fr 20fr;
     grid-gap: 20px;
-	height: 720px;
-	
-	
+	height: 720px;	
 	}
 
-/* .TimelinePanel
+
+
 .TimelinePanel {	
    text-align: left;
-		
-}*/
+   height: 600px;
+   overflow:auto;		
+}
+
+.TimelinePanel::-webkit-scrollbar {
+  display: none;
+}
 
 .SearchPanel {
   text-align: left;     
