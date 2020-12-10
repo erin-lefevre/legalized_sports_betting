@@ -21,6 +21,15 @@ body{
 }
 
 
+h2 {
+    color: gold;
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+
 header { 
   grid-column-start: 1;
   grid-column-end: 4;
