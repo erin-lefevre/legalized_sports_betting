@@ -30,7 +30,8 @@ a {
   margin: 10% auto;
   padding: 2rem;
   background: #fff;
-  color: #444;
+  color: red;
+  border: 2px solid black;
 }
 
 .modal-window header {
@@ -38,7 +39,7 @@ a {
 }
 
 .modal-close {
-  color: #aaa;
+  color: blue;
   line-height: 50px;
   font-size: 80%;
   position: absolute;
