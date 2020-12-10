@@ -14,7 +14,7 @@ body {
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+  padding: 5px 5px;
   position: relative;
   background-color: inherit;
   width: 100%;
@@ -41,14 +41,6 @@ body {
   .timeline::after {
     left: 31px;
   }
-
-/* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 25px;
-  }
-
 
 
 
