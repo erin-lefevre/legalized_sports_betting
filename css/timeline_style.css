@@ -32,7 +32,7 @@ body {
   background-color: ;
   position: relative;
   border-radius: 6px;
-  border: 3px solid white;
+  border: 3px solid grey;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
