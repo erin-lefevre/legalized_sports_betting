@@ -26,11 +26,12 @@ a {
 
 .modal-window>div {
   width: 400px;
+  height: 600px;    
   position: relative;
   margin: 10% auto;
   padding: 2rem;
-  background: #fff;
-  color: red;
+  background: white;
+  color: black;
   border: 2px solid black;
 }
 
