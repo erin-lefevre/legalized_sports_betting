@@ -7,7 +7,7 @@ a {
 .modal-window {
   position: fixed;
   background-color: rgba(200, 200, 200, 0.75);
-  top: 0;
+  top: center;
   right: 0;
   bottom: 0;
   left: 0;
@@ -21,18 +21,18 @@ a {
 
 .modal-window:target {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: fill;
 }
 
 .modal-window>div {
-  width: 400px;
-  height: 400px;    
+  width: 800px;
+  height: 550px;    
   position: relative;
   margin: 10% auto;
   padding: 2rem;
   background: white;
   color: black;
-  border: 2px solid black;
+  border: 2px solid black;  
 }
 
 .modal-window header {
@@ -116,8 +116,6 @@ footer {
 	height: 720px;	
 	}
 
-
-
 .TimelinePanel {	
    text-align: left;
    height: 600px;
@@ -130,8 +128,6 @@ footer {
   overflow: -moz-scrollbars-none;    
 }
 
-
-
 .SearchPanel {
   text-align: left;     
 }
@@ -143,6 +139,7 @@ footer {
     height: 600px;
     align-content:center;
     display: block;
+    z-index: 0;
   
 }	
 
