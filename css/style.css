@@ -30,7 +30,7 @@ a {
   position: relative;
   margin: 10% auto;
   padding: 2rem;
-  background: white;
+  background: #222;
   color: black;
   border: 2px solid black;  
 }
@@ -79,6 +79,10 @@ body{
   font-family: sans-serif;
   color: #ffffff;
   font-size: .85em;
+}
+
+h4 {
+    line-height: 1.3;
 }
 
 

@@ -21,7 +21,7 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: ;
+  background-color: inherit;
   position: relative;
   border-radius: 6px;
   border: 1px solid yellow;
