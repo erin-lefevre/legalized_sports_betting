@@ -48,7 +48,6 @@ var legalStatesGeoJSON = L.geoJSON(states_legal_points, {
     }).addTo(myMap);
 
 
-/*End of legal States import and symbolize*/
 
 
 /*New marker for states where it isn't legal to gamble*/
@@ -81,6 +80,30 @@ var nolegalStatesGeoJSON = L.geoJSON(states_legal_no_points, {
     }).addTo(myMap);
 
 
+/*New marker for states with an active bill*/
+var goldcoin_active = new L.Icon({
+    iconUrl: 'images/goldcoin_active.png',
+    iconRetinaUrl: 'images/goldcoin_active.png',    
+    iconAnchor:  [10, 10],
+	iconSize:    [20, 20],
+    popupAnchor: [1, -8]      
+    
+  });
+
+
+var states_active_points = L.geoJSON(states_active_points, {
+      pointToLayer: function(feature, latlng) {
+        console.log(latlng, feature);
+        return L.marker(latlng, {
+          icon: goldcoin_active
+        });
+      },
+      onEachFeature: onEachFeature
+    }).addTo(myMap);
+
+
+
+
 /*Layer control start*/
 var basemaps = {
     "Gold & Black": basemap1,
@@ -89,6 +112,7 @@ var basemaps = {
 
 var overlays = {   
 	"Legal States": legalStatesGeoJSON,
+	"Active bill": states_active_points,
     "Illegal States": nolegalStatesGeoJSON
   };
 
