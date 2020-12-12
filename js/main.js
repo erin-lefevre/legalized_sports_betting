@@ -32,8 +32,8 @@ var goldcoin_legal = new L.Icon({
     iconUrl: 'images/goldcoin_legal.png',
     iconRetinaUrl: 'images/goldcoin_legal.png',    
     iconAnchor:  [10, 10],
-	iconSize:    [25, 25],
-    popupAnchor: [1, -8]   
+	iconSize:    [20, 20],
+    popupAnchor: [0, -8]   
     
   });
 
@@ -86,7 +86,7 @@ var goldcoin_active = new L.Icon({
     iconRetinaUrl: 'images/goldcoin_active.png',    
     iconAnchor:  [10, 10],
 	iconSize:    [20, 20],
-    popupAnchor: [1, -8]      
+    popupAnchor: [0, -8]      
     
   });
 
