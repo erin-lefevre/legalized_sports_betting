@@ -27,25 +27,6 @@ var basemap2 = L.tileLayer('https://api.mapbox.com/styles/v1/erin-lefevre/ckg05k
         });
 
 
-/*Layer control start*/
-var basemaps = {
-    "Gold & Black": basemap1,
-    "Aerial Imagery": basemap2
-  };
-
-var overlays = {    
-  };
-
-L.control.layers(basemaps, overlays, {
-    collapsed: false
-}).addTo(myMap);
-
-/* End of layer control*/
-
-
-
-
-
 /*New marker for legal states*/
 var goldcoin_legal = new L.Icon({
     iconUrl: 'images/goldcoin_legal.png',
@@ -56,12 +37,7 @@ var goldcoin_legal = new L.Icon({
     
   });
 
-
-/*Add layers to map*/
-/*States with legal gaming*/
-var legalStatesGeoJSON = L.geoJSON(states_legal_points);
-
-L.geoJson(states_legal_points, {
+var legalStatesGeoJSON = L.geoJSON(states_legal_points, {
       pointToLayer: function(feature, latlng) {
         console.log(latlng, feature);
         return L.marker(latlng, {
@@ -89,14 +65,12 @@ function onEachFeature(feature, layer) {
     console.log(feature);
      layer.bindPopup('<b>'+'State Name: '+'</b>'+ feature.properties.Name +
 	 '<br>'+ '<b>'+'Status: '+'</b>'+ feature.properties.Status	+
-	 '<br>'+ '<b>'+'Casinos: '+'</b>'+ feature.properties.Casinos);
+	 '<br>'+ '<b>'+'Casinos: '+'</b>'+ feature.properties.Casinos
+	  +'<br>'+ '<b>'+'Rules: '+'</b>'+ feature.properties.Rules);
   }
 
-/*Add layers to map*/
-/*States with no legal gaming*/
-var nolegalStatesGeoJSON = L.geoJSON(states_legal_no_points);
 
-L.geoJson(states_legal_no_points, {
+var nolegalStatesGeoJSON = L.geoJSON(states_legal_no_points, {
       pointToLayer: function(feature, latlng) {
         console.log(latlng, feature);
         return L.marker(latlng, {
@@ -107,7 +81,23 @@ L.geoJson(states_legal_no_points, {
     }).addTo(myMap);
 
 
-/*End of legal States import and symbolize*/
+/*Layer control start*/
+var basemaps = {
+    "Gold & Black": basemap1,
+    "Aerial Imagery": basemap2
+  };
+
+var overlays = {   
+	"Legal States": legalStatesGeoJSON,
+    "Illegal States": nolegalStatesGeoJSON
+  };
+
+L.control.layers(basemaps, overlays, {
+    collapsed: false
+}).addTo(myMap);
+
+/* End of layer control*/
+
 
  
 
