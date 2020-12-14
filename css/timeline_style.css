@@ -24,7 +24,7 @@ body {
   background-color: inherit;
   position: relative;
   border-radius: 6px;
-  border: 1px solid yellow;
+  border: 1px solid #FEC84E;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
