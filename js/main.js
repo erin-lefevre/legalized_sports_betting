@@ -21,7 +21,7 @@ var basemap1 = L.tileLayer('https://api.mapbox.com/styles/v1/erin-lefevre/ckg03i
     
 }).addTo(myMap);
 
-/*Secondary tile layer - aerial imagery*/
+/*Secondary tileset - aerial imagery*/
 var basemap2 = L.tileLayer('https://api.mapbox.com/styles/v1/erin-lefevre/ckg05kat80jec19lan4o72erl/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXJpbi1sZWZldnJlIiwiYSI6ImNrZnljaWQ2eDBvd3gzM283eDdxaW03ZmwifQ.pUnzIpTy98k-H2VfbkPFkA', {           
             maxZoom: 18
         });
@@ -102,6 +102,30 @@ function onEachFeature(feature, layer) {
 	  +'<br>'+ '<b>'+'Rules: '+'</b>'+ feature.properties.Rules);
   }
 
+
+
+/*Marker for legal states*/
+var sportsbook_legal = new L.Icon({
+    iconUrl: 'images/sportsbook.png',
+    iconRetinaUrl: 'images/sportsbook.png',    
+    iconAnchor:  [10, 10],
+	iconSize:    [7, 7],
+    popupAnchor: [0, -8]   
+    
+  });
+
+/*Add legal states data*/
+var sportsbook = L.geoJSON(sportsbook, {
+      pointToLayer: function(feature, latlng) {
+        console.log(latlng, feature);
+        return L.marker(latlng, {
+          icon: sportsbook_legal
+        });
+      },
+      
+    }).addTo(myMap);
+
+
 /*Layer control basemaps*/
 var basemaps = {
     "Gold & Black": basemap1,
@@ -112,7 +136,8 @@ var basemaps = {
 var overlays = {   
 	"Legal States": legalStatesGeoJSON,
 	"Active bill": states_active_points,
-    "Illegal States": nolegalStatesGeoJSON
+    "Illegal States": nolegalStatesGeoJSON,
+	"Sportsbook locations": sportsbook
   };
 
 /*add all layers to the layer control - checkbox on by default*/
