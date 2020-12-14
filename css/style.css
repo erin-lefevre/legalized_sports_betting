@@ -70,7 +70,10 @@ header p {
     font-family: sans-serif;	
 	margin-left: 0px;
 	text-align: justify-all;
-	width: 60%;		
+	width: 60%;
+    font-size: 115%;
+    line-height: 1.4;
+    font-weight: bold;
 }
 
 html{  
@@ -114,7 +117,10 @@ header {
   text-align: justify;
   background-color: #000000;   
   padding: 0;
-
+  background-image: url(/images/board.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right;
 }
 
 footer { 
