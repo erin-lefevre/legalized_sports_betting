@@ -62,16 +62,16 @@ a {
 
 .content p {
     line-height: 1.2;
-    font-size: 100%;
-    font-family: monospace, sans-serif;
+    font-size: 135%;
+    font-family: calibri, monospace, sans-serif;
 }
 
 header p {
-    font-family: monospace, sans-serif;	
+    font-family: calibri, monospace, sans-serif;	
 	margin-left: 0px;
 	text-align: justify-all;
 	width: 60%;
-    font-size: 125%;
+    font-size: 135%;
     line-height: 1.2;
 }
 
@@ -97,19 +97,20 @@ h3 {
 
 .content h2 {
     color: #FEC84E;
-    font-size: 125%;
+    font-size: 135%;
 }
 
 .TimelinePanel h1 {
     color: #FEC84E;
     text-align: center;
-    font-size: 150%;
+    font-size: 195%;
+    font-family: calibri, sans-serif;
 }
 
 .header h1 {
     color: #FEC84E;
     text-align: left;
-    font-size: 150%;
+    font-family: calibri, sans-serif;
 }
 
 header { 
