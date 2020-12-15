@@ -61,19 +61,18 @@ a {
 }*/
 
 .content p {
-    line-height: 1.4;
-    font-size: 115%;
-    font-weight: bold;
+    line-height: 1.2;
+    font-size: 100%;
+    font-family: monospace, sans-serif;
 }
 
 header p {
-    font-family: sans-serif;	
+    font-family: monospace, sans-serif;	
 	margin-left: 0px;
 	text-align: justify-all;
 	width: 60%;
-    font-size: 115%;
-    line-height: 1.4;
-    font-weight: bold;
+    font-size: 125%;
+    line-height: 1.2;
 }
 
 html{  
@@ -86,7 +85,6 @@ body{
   background-color: #000000;
   font-family: sans-serif;
   color: #ffffff;
-  font-size: .85em;
 }
 
 h4 {
@@ -99,19 +97,23 @@ h3 {
 
 .content h2 {
     color: #FEC84E;
+    font-size: 125%;
 }
 
 .TimelinePanel h1 {
     color: #FEC84E;
     text-align: center;
+    font-size: 150%;
 }
 
 .header h1 {
     color: #FEC84E;
     text-align: left;
+    font-size: 150%;
 }
 
 header { 
+  margin-top: none;    
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: justify;
@@ -119,7 +121,7 @@ header {
   padding: 0;
   background-image: url(/images/board.jpg);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 39%;
   background-position: right;
 }
 
