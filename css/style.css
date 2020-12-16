@@ -4,7 +4,7 @@ a {
     color: #FEC84E;
 }
 
-/*.modal-window {
+.modal-window {
   position: fixed;
   background-color: black;
   top: 0;
@@ -26,7 +26,7 @@ a {
 
 .modal-window>div {
   width: 800px;
-  height: 550px;    
+  height: 400px;    
   position: relative;
   margin: 10% auto;
   padding: 2rem;
@@ -58,7 +58,7 @@ a {
 .modal-window h1 {
   font-size: 150%;
   margin: 0 0 15px;
-}*/
+}
 
 .content p {
     line-height: 1.2;
@@ -98,6 +98,7 @@ h3 {
 .content h2 {
     color: #FEC84E;
     font-size: 135%;
+    font-style: italic;
 }
 
 .TimelinePanel p {
