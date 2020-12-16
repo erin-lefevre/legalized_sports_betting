@@ -56,9 +56,11 @@ a {
   color: #000;
 }
 
-.modal-window h1 {
-  font-size: 150%;
+.modal-window p {
+  font-size: 110%;
+  color: #FEC84E;    
   margin: 0 0 15px;
+  font-family: calibri, monospace, sans-serif;
 }
 
 .content p {
