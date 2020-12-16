@@ -58,19 +58,33 @@ a {
 
 .modal-window p {
   font-size: 110%;
+  color: white;    
+  margin: 0 0 15px;
+  font-family: calibri, sans-serif;
+}
+
+.modal-window h1 {
+  font-size: 130%;
   color: #FEC84E;    
   margin: 0 0 15px;
-  font-family: calibri, monospace, sans-serif;
+  font-family: calibri, sans-serif;
+}
+
+.modal-window a {
+  font-size: 110%;    
+  color: white;    
+  margin: 0 0 15px;
+  font-family: calibri, sans-serif;
 }
 
 .content p {
     line-height: 1.2;
     font-size: 135%;
-    font-family: calibri, monospace, sans-serif;
+    font-family: calibri, sans-serif;
 }
 
 header p {
-    font-family: calibri, monospace, sans-serif;	
+    font-family: calibri, sans-serif;	
 	margin-left: 0px;
 	text-align: justify-all;
 	width: 60%;
@@ -86,7 +100,7 @@ body{
   padding: 10px;
   margin: 10px;
   background-color: #000000;
-  font-family: sans-serif;
+  font-family: calibri, sans-serif;
   color: #ffffff;
 }
 
@@ -107,7 +121,7 @@ h3 {
 .TimelinePanel p {
     line-height: 1.2;
     font-size: 135%;
-    font-family: calibri, monospace, sans-serif;
+    font-family: calibri, sans-serif;
 }
 
 .TimelinePanel h1 {
