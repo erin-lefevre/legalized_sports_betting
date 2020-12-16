@@ -100,6 +100,12 @@ h3 {
     font-size: 135%;
 }
 
+.TimelinePanel p {
+    line-height: 1.2;
+    font-size: 135%;
+    font-family: calibri, monospace, sans-serif;
+}
+
 .TimelinePanel h1 {
     color: #FEC84E;
     text-align: center;
