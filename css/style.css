@@ -87,7 +87,7 @@ header p {
     font-family: calibri, sans-serif;	
 	margin-left: 0px;
 	text-align: justify-all;
-	width: 70%;
+	width: 65%;
     font-size: 135%;
     line-height: 1.2;
 }
@@ -147,7 +147,7 @@ header {
   padding: 0;
   background-image: url(/images/board.jpg);
   background-repeat: no-repeat;
-  background-size: 29%;
+  background-size: 34%;
   background-position: right;
 }
 
