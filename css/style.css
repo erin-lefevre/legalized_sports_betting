@@ -144,7 +144,7 @@ header {
   text-align: justify;
   background-color: #000000;   
   padding: 0;
-  background-image: url(/images/board.jpg);
+  background-image: url(../images/board.jpg);
   background-repeat: no-repeat;
   background-size: 39%;
   background-position: right;
