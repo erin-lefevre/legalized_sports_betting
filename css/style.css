@@ -216,44 +216,9 @@ footer {
 	opacity: .75;
 	width: 150px;
 	
-/*changes the background color of the zoom*/
-.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {
-	font-size: 22px;
-	background-color: #f9fbd0;
-	}
-	
-/* general typography */
-.leaflet-container {
-	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-	color: #f9fbd0
-	}
 
-header h3 {
-	font-family: sans-serif;
-	margin-left: 30px;	
-	color: #b52025;
-	margin-bottom: 10px;
-	font-weight: 100;
 	
-}
 
-header p {
-    font-family: sans-serif;
-	font-size: 2em;
-	margin-left: 30px;
-	text-align: justify-all;
-	width: 300px;
-		
-}
-	
-h4 {
-	font-family: sans-serif;
-	margin-left: 30px;
-	margin-top: 40px;
-	color: #b52025;
-	font-weight: 100;
-	
-}
     
 
 	
