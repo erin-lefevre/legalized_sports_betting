@@ -39,8 +39,7 @@ var goldcoin_legal = new L.Icon({
 
 /*Add legal states data*/
 var legalStatesGeoJSON = L.geoJSON(states_legal_points, {
-      pointToLayer: function(feature, latlng) {
-        console.log(latlng, feature);
+      pointToLayer: function(feature, latlng) {        
         return L.marker(latlng, {
           icon: goldcoin_legal
         });
@@ -61,8 +60,7 @@ var goldcoin_legal_no = new L.Icon({
 
 /*Add illegal states data*/
 var nolegalStatesGeoJSON = L.geoJSON(states_legal_no_points, {
-      pointToLayer: function(feature, latlng) {
-        console.log(latlng, feature);
+      pointToLayer: function(feature, latlng) {        
         return L.marker(latlng, {
           icon: goldcoin_legal_no
         });
@@ -83,8 +81,7 @@ var goldcoin_active = new L.Icon({
 
 /*Add active states data*/
 var states_active_points = L.geoJSON(states_active_points, {
-      pointToLayer: function(feature, latlng) {
-        console.log(latlng, feature);
+      pointToLayer: function(feature, latlng) {       
         return L.marker(latlng, {
           icon: goldcoin_active
         });
@@ -93,16 +90,16 @@ var states_active_points = L.geoJSON(states_active_points, {
     }).addTo(myMap);
 
 
-/*Popup information for all layers*/
-function onEachFeature(feature, layer) {
-    console.log(feature);
+/*Popup information for all markers*/
+function onEachFeature(feature, layer) {    
      layer.bindPopup('<b>'+'State Name: '+'</b>'+ feature.properties.Name +
 	 '<br>'+ '<b>'+'Status: '+'</b>'+ feature.properties.Status	+
 	 '<br>'+ '<b>'+'Casinos: '+'</b>'+ feature.properties.Casinos
-	  +'<br>'+ '<b>'+'Rules: '+'</b>'+ feature.properties.Rules);
+	  +'<br>'+ '<b>'+'Rules: '+'</b>'+ feature.properties.Rules
+	  +'<br>'+ '<b>'+'Total bets placed $: '+'</b>'+ feature.properties.Total_Hand			
+	  +'<br>'+ '<b>'+'Sportsbook revenue $: '+'</b>'+ feature.properties.Sportsbook	
+	  +'<br>'+ '<b>'+'State taxes collected $: '+'</b>'+ feature.properties.State_Taxe);
   }
-
-
 
 /*Marker for legal states*/
 var sportsbook_legal = new L.Icon({
@@ -116,15 +113,14 @@ var sportsbook_legal = new L.Icon({
 
 /*Add legal states data*/
 var sportsbook = L.geoJSON(sportsbook, {
-      pointToLayer: function(feature, latlng) {
-        console.log(latlng, feature);
+      pointToLayer: function(feature, latlng) {        
         return L.marker(latlng, {
           icon: sportsbook_legal
-        });
+        });  
+	  
       },
       
     }).addTo(myMap);
-
 
 /*Layer control basemaps*/
 var basemaps = {
@@ -138,6 +134,7 @@ var overlays = {
 	"Active bill": states_active_points,
     "Illegal States": nolegalStatesGeoJSON,
 	"Sportsbook locations": sportsbook
+	
   };
 
 /*add all layers to the layer control - checkbox on by default*/
